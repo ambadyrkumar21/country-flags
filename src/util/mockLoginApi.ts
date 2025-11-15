@@ -1,12 +1,12 @@
-import { http, HttpResponse } from "msw";
+import { http, HttpResponse, delay } from "msw";
 import { setupWorker } from 'msw/browser'
 
 export const worker = setupWorker(
   http.post("/login", async ({ request }) => {
+    await delay(1000);
     type LoginBody = { username: string; password: string };
     const { username, password } = await request.json() as LoginBody;
 
-    debugger;
     if (username === "ambadyrkumar" && password === "Test@123") {
       return HttpResponse.json({
         id: 1,
