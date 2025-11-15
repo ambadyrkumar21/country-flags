@@ -4,7 +4,7 @@ import { useLoginMutation } from "../redux/services/loginApi";
 import { useAppDispatch } from "../hooks/useAppSelector";
 import { setCredentials } from "../redux/slices/authSlice";
 import { Link, useNavigate } from "react-router-dom";
-import * as Yup from 'Yup';
+import * as Yup from 'yup';
 import SocialButtons from "../components/SocialButtons";
 import { useState } from "react";
 
