@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Alert, Button, Card, Col, Container, Nav, Row, Spinner } from 'react-bootstrap';
 import { useGetCountryDataQuery } from '../redux/services/homeApi';
 import Carousel from '../components/Carousel';
