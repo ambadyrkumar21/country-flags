@@ -93,11 +93,10 @@ const LoginPage = () => {
                   >
                     <i className={`bi ${showPassword ? "bi-eye-slash" : "bi-eye"}`}></i>
                   </Button>
-                </div>
-
-                <Form.Control.Feedback type="invalid">
+                   <Form.Control.Feedback type="invalid">
                   {formik.errors.password}
                 </Form.Control.Feedback>
+                </div>
 
                 <Form.Group className="mb-4 d-flex align-items-center">
                   <Form.Check type="checkbox" id="keepSignedIn" />
