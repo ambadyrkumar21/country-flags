@@ -211,8 +211,7 @@ const HomePage = () => {
             onClick={() => setMenuOpen(false)}
           ></i>
         </div>
-
-\        <Nav className="flex-column gap-3">
+        <Nav className="flex-column gap-3">
           {(['All', 'Asia', 'Europe'] as const).map((tab) => (
             <Nav.Link
               key={tab}
